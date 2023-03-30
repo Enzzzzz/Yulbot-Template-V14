@@ -1,8 +1,8 @@
 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Enzzzzz/YulRPG?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/Enzzzzz/YulRPG?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/Enzzzzz/YulRPG?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Enzzzzz/Yulbot-Template-V14?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Enzzzzz/Yulbot-Template-V14?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Enzzzzz/Yulbot-Template-V14?style=for-the-badge)
 
 
 <img src="image.png" alt="img">
@@ -16,7 +16,7 @@
 [Baixando]
 ```
   - Crie o BOT em [Discord Developers](https://discord.com/developers/)
-  - Clone ou baixe os arquivos `git clone https://github.com/Enzzzzz/YulBotV14` 
+  - Clone ou baixe os arquivos `git clone https://github.com/Enzzzzz/Yulbot-Template-V14` 
   - Utilize `cd YulBot-Template-V14` para entrar na pasta caso tenha dado clone
   - Baixe as dependências com `npm install`
   - Copie o `.env.example` para `.env` e configure-o
