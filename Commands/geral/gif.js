@@ -20,10 +20,10 @@ module.exports = {
         gif = interaction.options.getString('gif')
         let link = `https://tenor.googleapis.com/v2/search?q=${encodeURIComponent(gif)}&key=AIzaSyBykZU-sNFm-t4LQ5L3mUcvhD_y-vxcBJ8&client_key=my_test_app&limit=1`
         let { data } = await axios.get(link)
-        ggif = data.results[0].media_formats.gif.url
+        gifResult = data.results[0].media_formats.gif.url
         
         
-        interaction.reply(ggif)
+        interaction.reply(gifResult)
 
     }
 };
