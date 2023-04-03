@@ -1,6 +1,8 @@
 const client = require('..');
 const chalk = require('chalk');
 const ms = require('ms')
+const mongoose = require("mongoose")
+const mongodbURL = process.env.DATABASE
 
 
 const activities_list = [
@@ -17,6 +19,20 @@ client.on("ready", () => {
 		const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
 		user.setActivity({ name: `${activities_list[index]}`, type: 3, })
 	}, ms("5s"))
+	
+        if (!mongodbURL) return
+
+        mongoose.set("strictQuery", false);
+        mongoose.connect(mongodbURL, {
+        
+          useNewUrlParser: true,
+          useUnifiedTopology: true
+        
+        }).then(() => {
+        
+          console.log("Conectado a Database!")
+        
+        }).catch(err => console.log(err))
 
 	console.log(chalk.red(`${client.user.username} online!`))
 });
